@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff8e8" />
+  <title>YKGAME | 용쿠게임</title>
+  <meta name="description" content="재미있는 게임과 유용한 앱을 만드는 1인 개발 스튜디오, YKGAME 용쿠게임입니다." />
+  <style>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
+      color:#263238;
+      background:
+        radial-gradient(circle at 15% 5%,#fff1ad 0 8%,transparent 9%),
+        linear-gradient(180deg,#dff5ff 0,#f7fcff 34%,#fff9e8 34%,#fffdf8 100%);
+    }
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1040px,92%);margin:auto}
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:18px 0;font-weight:900;
+    }
+    .brand{font-size:1.25rem;color:#ff9d18}
+    nav a{margin-left:18px;font-size:.92rem;color:#49616d}
+    .hero{text-align:center;padding:62px 0 70px}
+    .mascot{
+      width:122px;height:122px;margin:auto;
+      display:grid;place-items:center;font-size:72px;
+      background:#fff;border:7px solid #55bde8;border-radius:50%;
+      box-shadow:0 12px 30px #4f91aa33;
+    }
+    h1{font-size:clamp(2.7rem,10vw,5.3rem);margin:18px 0 0;line-height:.95;color:#ff9f1c;letter-spacing:-3px}
+    h1 span{color:#279fd3}
+    .hero h2{margin:12px 0 8px;font-size:1.15rem;color:#456}
+    .hero p{max-width:580px;margin:0 auto;color:#667b84;line-height:1.7}
+    .btns{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
+    .btn{padding:13px 20px;border-radius:999px;background:#249ed0;color:white;font-weight:800;box-shadow:0 7px 16px #249ed033}
+    .btn.alt{background:#ffad2f}
+    section{padding:54px 0}
+    .title{text-align:center;margin:0 0 28px;font-size:1.8rem}
+    .title small{display:block;color:#6f8994;font-size:.9rem;font-weight:600;margin-top:7px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{
+      background:#ffffffd9;border:1px solid #e7eef0;border-radius:24px;padding:24px;
+      box-shadow:0 12px 30px #516b7612;position:relative;overflow:hidden;
+    }
+    .icon{font-size:42px}
+    .card h3{margin:12px 0 7px;font-size:1.25rem}
+    .card p{margin:0;color:#6a7c84;line-height:1.6;font-size:.94rem}
+    .tag{display:inline-block;margin-top:15px;padding:6px 10px;border-radius:999px;background:#e7f7ff;color:#1687b5;font-size:.75rem;font-weight:900}
+    .tag.soon{background:#fff0cc;color:#c67b00}
+    .about{
+      background:linear-gradient(135deg,#269fd1,#57c6dd);
+      color:white;border-radius:28px;padding:34px;text-align:center;
+      box-shadow:0 15px 35px #2289aa2c;
+    }
+    .about h2{margin:0 0 10px}.about p{margin:0;line-height:1.8;opacity:.94}
+    footer{text-align:center;padding:44px 0 34px;color:#81929a;font-size:.84rem}
+    .links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .linkchip{background:white;color:#46616d;padding:10px 14px;border-radius:14px;font-weight:700}
+    @media(max-width:650px){
+      nav{display:none}.hero{padding-top:42px}.grid{grid-template-columns:1fr}
+      section{padding:42px 0}.about{padding:28px 20px}h1{letter-spacing:-2px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">🐱 YKGAME</div>
+      <nav>
+        <a href="#games">게임 & 앱</a>
+        <a href="#about">소개</a>
+        <a href="#contact">문의</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="mascot">🐱</div>
+        <h1>YK<span>GAME</span></h1>
+        <h2>용쿠게임</h2>
+        <p>재미있는 게임과 생활에 유용한 앱을 만드는 1인 개발 스튜디오입니다.<br>작은 아이디어를 하나씩 즐거운 앱으로 만들고 있어요.</p>
+        <div class="btns">
+          <a class="btn" href="#games">🎮 만든 앱 보기</a>
+          <a class="btn alt" href="#about">🐾 YKGAME 소개</a>
+        </div>
+      </div>
+
+      <section id="games">
+        <h2 class="title">YKGAME 작품들<small>게임도 만들고, 생활 앱도 만듭니다.</small></h2>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">🎣🐱</div>
+            <h3>바다낚시냥</h3>
+            <p>귀여운 냥이와 함께 즐기는 바다낚시 게임. 다양한 어종을 낚고 도감을 채워보세요.</p>
+            <span class="tag">GAME</span>
+          </article>
+          <article class="card">
+            <div class="icon">📅⏰</div>
+            <h3>교대링</h3>
+            <p>복잡한 교대근무 일정을 한눈에 확인하고 관리할 수 있는 교대근무 스케줄 앱.</p>
+            <span class="tag">APP</span>
+          </article>
+          <article class="card">
+            <div class="icon">⛽🚗</div>
+            <h3>기름앵GGO</h3>
+            <p>주변 주유소와 유가를 빠르게 확인하고 원하는 주유소로 이동할 수 있는 생활 앱.</p>
+            <span class="tag">APP</span>
+          </article>
+          <article class="card">
+            <div class="icon">🥚🐾</div>
+            <h3>소나기펫</h3>
+            <p>알에서 시작해 나만의 펫을 키우는 귀여운 성장형 펫 프로젝트.</p>
+            <span class="tag soon">COMING SOON</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about">
+          <h2>🐱 YKGAME | 용쿠게임</h2>
+          <p>아이디어가 떠오르면 직접 만들어봅니다.<br>
+          게임부터 일상에 필요한 작은 앱까지,<br>
+          쉽고 재미있게 사용할 수 있는 서비스를 만들어가겠습니다.</p>
+          <div class="links" id="contact">
+            <!-- 아래 # 부분을 실제 인스타그램 주소 / Google Play 개발자 페이지 주소로 바꿔주세요. -->
+            <a class="linkchip" href="#" aria-label="Instagram">📷 Instagram</a>
+            <a class="linkchip" href="#" aria-label="Google Play">▶ Google Play</a>
+            <a class="linkchip" href="mailto:yys0315a@naver.com">✉️ 문의하기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 YKGAME · 용쿠게임<br>
+      PLAY · CREATE · MORE FUN 🐾
+    </footer>
+  </div>
+</body>
+</html>
